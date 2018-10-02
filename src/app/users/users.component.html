@@ -1,0 +1,18 @@
+<table class="table table-striped table-md table-dark">
+  <caption>{{ title }}</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Province</th>
+      <th>Operations</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr app-user *ngFor="let user of users" [data-user]="user" (user-selected)="selected($event)"
+      (user-deleted)="deleted($event)"></tr>
+  </tbody>
+</table>

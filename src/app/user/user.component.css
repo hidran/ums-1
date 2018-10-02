@@ -1,0 +1,9 @@
+.operations {
+  width: 200px;
+  text-align: center;
+}
+
+.operations button {
+  padding: 5px;
+  width: 40px;
+}
